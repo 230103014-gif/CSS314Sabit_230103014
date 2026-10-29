@@ -1,0 +1,38 @@
+{
+  "N": 1472,
+  "M": 736,
+  "leading_dimension": 1472,
+  "seed": 69733,
+  "smoke": false,
+  "algorithm": "C=A[:M,:M] @ B[:M,:M]; parent arrays retain salted leading dimension N",
+  "backend": {
+    "compiler": "/usr/bin/clang",
+    "flags": [
+      "-O2",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-fno-vectorize",
+      "-fno-slp-vectorize"
+    ],
+    "source_sha256": "a5ee21312d45b6d27959d764cb9e3ac6032500706d76b54987895e355ebaf0bb",
+    "backend": "single-threaded C loops via standard-library ctypes; no BLAS"
+  },
+  "warmups": 1,
+  "naive_runs_ns": [
+    349050709,
+    349875791,
+    347523625
+  ],
+  "interchanged_runs_ns": [
+    137399042,
+    136622708,
+    136536875
+  ],
+  "naive_median_ns": 349050709,
+  "interchanged_median_ns": 136622708,
+  "speedup": 2.5548513428675417,
+  "max_absolute_error": 0.0,
+  "baseline_digest": "be5f95c2165da58933135f13450e57be31c541f1d5ea07bd5e7eff1c0555ab12",
+  "interchanged_digest": "be5f95c2165da58933135f13450e57be31c541f1d5ea07bd5e7eff1c0555ab12",
+  "numpy_reference_max_absolute_error": 1.1368683772161603e-13
+}

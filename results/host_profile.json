@@ -1,0 +1,89 @@
+{
+  "recorded_at_utc": "2026-10-29T07:41:42.649791+00:00",
+  "system": "Darwin",
+  "kernel": "25.1.0",
+  "machine": "arm64",
+  "python": "3.11.9 (v3.11.9:de54cf5be3, Apr  2 2024, 07:12:50) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "python_implementation": "CPython",
+  "logical_threads_fallback": 8,
+  "telemetry_errors": {},
+  "cpu_model": "Apple M1",
+  "microarchitecture": {
+    "source": "sysctl hw.cpufamily identifier",
+    "cpufamily": 458787763
+  },
+  "base_frequency_hz": null,
+  "physical_cores": 8,
+  "logical_threads": 8,
+  "l1_data_cache_bytes": 65536,
+  "l2_cache_bytes": 4194304,
+  "l3_cache_bytes": null,
+  "cache_line_bytes": 128,
+  "counter_hardware_events": "not collected; no PMU access assumed",
+  "hardware_model": "MacBookPro17,1",
+  "performance_levels": [
+    {
+      "name": "Performance",
+      "physical_cores": 4,
+      "logical_threads": 4,
+      "l1_data_cache_bytes": 131072,
+      "l2_cache_bytes": 12582912,
+      "cores_per_l2": 4
+    },
+    {
+      "name": "Efficiency",
+      "physical_cores": 4,
+      "logical_threads": 4,
+      "l1_data_cache_bytes": 65536,
+      "l2_cache_bytes": 4194304,
+      "cores_per_l2": 4
+    }
+  ],
+  "system_profiler_selected": {
+    "chip_type": "Apple M1",
+    "machine_model": "MacBookPro17,1",
+    "number_processors": "proc 8:4:4",
+    "physical_memory": "8 GB"
+  },
+  "frequency_note": "Apple Silicon may not expose a base clock; null means unavailable, not zero.",
+  "smt_detected": false,
+  "raw_sysctl": {
+    "machdep.cpu.brand_string": "Apple M1",
+    "hw.model": "MacBookPro17,1",
+    "hw.physicalcpu": "8",
+    "hw.logicalcpu": "8",
+    "hw.cpufrequency": "",
+    "hw.cachelinesize": "128",
+    "hw.l1dcachesize": "65536",
+    "hw.l2cachesize": "4194304",
+    "hw.l3cachesize": "",
+    "hw.perflevel0.name": "Performance",
+    "hw.perflevel0.physicalcpu": "4",
+    "hw.perflevel0.logicalcpu": "4",
+    "hw.perflevel0.l1dcachesize": "131072",
+    "hw.perflevel0.l2cachesize": "12582912",
+    "hw.perflevel0.cpusperl2": "4",
+    "hw.perflevel1.name": "Efficiency",
+    "hw.perflevel1.physicalcpu": "4",
+    "hw.perflevel1.logicalcpu": "4",
+    "hw.perflevel1.l1dcachesize": "65536",
+    "hw.perflevel1.l2cachesize": "4194304",
+    "hw.perflevel1.cpusperl2": "4",
+    "hw.cpufamily": "458787763"
+  },
+  "required_telemetry_complete": true,
+  "cache_note": "Missing L3 may mean absent or unexposed; null is never treated as a measured zero.",
+  "student_id_note": "The supplied ID has 9 digits; full ID used unchanged despite PDF saying 8.",
+  "normalization_note": "Empty optional sysctl values are represented as JSON null; original raw_sysctl strings and all measured values retained.",
+  "false_sharing_method": {
+    "allocation": "RawArray(c_int64), explicitly aligned; one writer per counter; no global lock in hot loop",
+    "timing": "spawn/import and readiness excluded; start signal through receipt of all completed workers included",
+    "repetitions": 1,
+    "affinity": "OS scheduler; physical core placement is not guaranteed",
+    "privatization": "local Python scalar incremented K times; one final write under a shared lock",
+    "cache_line_detected": 128,
+    "fallback_alignment_bytes": 128,
+    "warning": "64-byte spacing is not sufficient for a CPU with 128-byte coherence lines. Native padding is additionally tested when detected.",
+    "karp_flatt_warning": "K is fixed PER worker, so aggregate work grows with P. The PDF literal Karp-Flatt uses T1/TP on unequal work and is not a strong-scaling serial fraction. A work-normalized throughput-based diagnostic is reported separately; neither guarantees monotonicity."
+  }
+}
